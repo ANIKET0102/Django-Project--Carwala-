@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %} Contact {% endblock title %}
+
+
+{% block body %}
+
+<div class="container px-0">
+    <img src="https://wallpapercave.com/wp/wp1754678.jpg" class="card-img-top  my-4" alt="...">
+</div>
+<div class="container">
+    <h1 class="text-center">Contact Us</h1>
+<form action="/contact" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="ename" class="form-label">Enter your name</label>
+        <input type="text" class="form-control" id="name" placeholder="name" name="name">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone </label>
+        <input type="phone" class="form-control" id="phone" placeholder="phone" name="phone">
+    </div>
+    <div class="mb-3">
+        <label for="desc" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</div>
+</form>
+
+{%endblock body %}
