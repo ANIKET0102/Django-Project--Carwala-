@@ -36,21 +36,6 @@ Start the development server:
 python manage.py runserver
 
 
-Project Structure
-Carwala/
-├── carwala/               # Main Django project folder
-│   ├── settings.py        # Project settings
-│   ├── urls.py            # Project URLs
-│   └── wsgi.py            # WSGI configuration
-├── cars/                  # App handling car listings
-│   ├── migrations/        # Database migrations
-│   ├── templates/         # HTML templates
-│   ├── views.py           # App views for handling requests
-│   └── models.py          # Database models for cars
-├── static/                # Static files (CSS, JS, Images)
-├── db.sqlite3             # SQLite database
-└── README.md              # Project documentation
-
 Features to Add
 Car comparison feature
 Advanced search filters (e.g., price range, brand, year)
